@@ -10,7 +10,7 @@ $result = mysqli_query($conn,$sql_select);
 $user_data = mysqli_fetch_assoc($result);
 //var_dump($user_data);
 //die();
-if (($user_data['email'] == $_POST['email'] && ($_POST['name']) == $user_data['name']))
+if (($user_data['email'] == $_POST['email'] && ($_POST['name']) == $user_data['name'] && ($_POST['email']==$user_data['email'])))
 {
     echo "wrong";
 }else
@@ -23,7 +23,7 @@ if (($user_data['email'] == $_POST['email'] && ($_POST['name']) == $user_data['n
     mysqli_stmt_execute($stmt);
     echo "<div class='alert alert-success'>You are registered </div>";
 
-    header("Location: login.php");
+    header("Location:login&register.html");
 }
 
 
