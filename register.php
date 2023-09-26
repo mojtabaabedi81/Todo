@@ -10,9 +10,10 @@ $result = mysqli_query($conn,$sql_select);
 $user_data = mysqli_fetch_assoc($result);
 //var_dump($user_data);
 //die();
-if (($user_data['email'] == $_POST['email'] && ($_POST['name']) == $user_data['name'] && ($_POST['email']==$user_data['email'])))
+if (($user_data['email'] == $_POST['email'] && ($_POST['name']) == $user_data['name'] ))
 {
     echo "wrong";
+    exit();
 }else
 
 {
