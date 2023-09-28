@@ -52,7 +52,7 @@ $rows = $result->fetch_assoc();
 </head>
 <body style="background-color: #6593a2">
 <center>
-    <img src="4d2de200cdc1de2bb0675cceddfb5859.png" align="middle">
+    <img src="../assets/4d2de200cdc1de2bb0675cceddfb5859.png" align="middle">
     <style>
         img {
             opacity: 30%;
