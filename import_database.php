@@ -1,7 +1,6 @@
 <?php
 require "database.php";
 $imported_list = ($_POST['data']);
-$conn = mysqli_connect($dbServername,$dbUsername,$dbPassword,$dbName);
 $sql_2nd = "SELECT * FROM users";
 $result = mysqli_query($conn, $sql_2nd);
 $row = mysqli_fetch_assoc($result);
