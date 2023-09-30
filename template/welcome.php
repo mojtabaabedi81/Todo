@@ -1,4 +1,4 @@
- b <body>
+<body>
 <div class="text">
     <link rel="stylesheet" type="text/css" href="../assets/welcom.css">
     <span>T</span>
