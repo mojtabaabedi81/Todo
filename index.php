@@ -27,7 +27,7 @@ if (file_exists($file)){
     require $file;
 } else {
 
-    die('kheili khari');
+    die('something went wrong');
 }
 
 if (function_exists($method)){
