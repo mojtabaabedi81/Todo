@@ -1,9 +1,11 @@
 <?php
 
-$conn = mysqli_connect($servername,$username,$pass,$dbname);
+try {
 
-if (!$conn){
+    $dsn = "mysql:host={$servername};dbname=" . $dbname;
+    $conn = new PDO($dsn, $username, $pass);
 
-    die("something went wrong;");
+} catch (PDOException $e) {
+    die("cant connect to database");
 }
 

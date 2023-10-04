@@ -2,12 +2,31 @@
 
 function login()
 {
+    if (post('loginRequest')) {
+        if (user_exists(post('email'))) {
+            $login = user_login(post('email'), post('password'));
+            if ($login) {
 
-    echo "login page is here !";
+                view("todo_list");
+            } else {
+                echo "user or password wronge !";
+            }
+        } else {
+            echo "user not found !";
+            view("login&register");
+
+        }
+
+    } else
+        view("login&register");
 }
 
 function register()
 {
 
-    echo "register page is here !";
+    if (null !== (post('registerRequest'))) {
+
+
+    }
+    view("login&register");
 }

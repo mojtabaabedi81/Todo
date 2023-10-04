@@ -1,4 +1,5 @@
 <body>
+
 <div class="text">
     <link rel="stylesheet" type="text/css" href="../assets/welcom.css">
     <span>T</span>
@@ -11,7 +12,7 @@
 
 </body>
 <body>
-<form action="login&register.html" method="post">
+<form action="./user/login" method="post">
     <div class="container">
         <div class="center">
         <button class="btn">

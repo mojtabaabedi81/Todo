@@ -24,7 +24,7 @@ if (($user_data['email'] == $_POST['email'] && ($_POST['name']) == $user_data['n
     mysqli_stmt_execute($stmt);
     echo "<div class='alert alert-success'>You are registered </div>";
 
-    header("Location:login&register.html");
+    header("Location:login&register.php");
 }
 
 
